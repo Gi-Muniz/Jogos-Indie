@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #3c006d, #1a001f, #0a0014);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  flex: 1;                     
+  padding: 40px 20px;
+}
+
+.pag {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 350px;
+  align-items: center;
+}
+
+.imagens img {
+  max-width: 400px;           
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagens img:hover {
+  transform: scale(1.05);
+}
+
+.texto {
+  flex: 2 1 600px;
+  max-width: 700px;
+}
+
+.texto h1 {
+  font-size: 2.8em;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.bloco {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+  background: rgba(10, 0, 20, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .imagens img {
+    max-width: 300px;
+  }
+
+  .texto h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  .texto {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pag {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagens img {
+    max-width: 240px;
+  }
+
+  .texto h1 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  .bloco {
+    font-size: 1em;
+  }
+}
+
