@@ -25,44 +25,57 @@ main {
 .pag {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
+/* Coluna de imagens */
 .imagens {
   display: flex;
   flex-direction: column;
-  gap: 10px;
- 
+  gap: 20px;
+  flex: 1 1 350px;
+  align-items: center;
 }
 
 .imagens img {
-  width: 400px;
-  border-radius: 10px;
+  max-width: 400px;           
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
+.imagens img:hover {
+  transform: scale(1.05);
+}
+
+/* Texto */
 .texto {
-  margin-top: 0;
-  padding-top: 0;
-  color: #eee;
+  flex: 2 1 600px;
+  max-width: 700px;
 }
 
 .texto h1 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  font-size: 2.8em;
+  margin-bottom: 25px;
   color: #fff;
 }
 
-.texto p {
-  font-size: 1.2em;
+.bloco {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
   line-height: 1.6;
+  font-size: 1.1em;
 }
 
-.h1{
-font-size: 2.5em;
-  color: #fff;
-}
-
+/* Rodapé */
 footer {
   text-align: center;
   padding: 20px;
@@ -70,5 +83,40 @@ footer {
   color: #aaa;
   background: rgba(10, 0, 20, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .imagens img {
+    max-width: 300px;
+  }
+
+  .texto h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+
+  .texto {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pag {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagens img {
+    max-width: 240px;
+  }
+
+  .texto h1 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  .bloco {
+    font-size: 1em;
+  }
 }
