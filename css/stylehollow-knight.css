@@ -13,16 +13,13 @@ body {
   flex-direction: column;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #1a1a2e;
-  font-family: Arial, sans-serif;
-  padding: 40px;
+/* Centraliza tudo verticalmente */
+main {
+  display: flex;
+  justify-content: center;     /* Centraliza horizontalmente */
+  align-items: center;         /* Centraliza verticalmente */
+  flex: 1;                     /* ocupa o espaço restante da tela */
+  padding: 40px 20px;
 }
 
 .pag {
