@@ -68,35 +68,7 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos importantes 
 
 O projeto também contribuiu para o desenvolvimento de noções de portfólio, versionamento e apresentação de projetos no GitHub.
 
-## 📷 Prévia do projeto
-
-> Adicione aqui um print da página inicial do projeto.
-
-```md
-![Prévia do projeto](./images/preview.png)
-```
-
-## 🔗 Acesso ao projeto
-
-Caso o projeto seja publicado no GitHub Pages, o link poderá ser inserido aqui:
-
-```md
-https://gi-muniz.github.io/Jogos-Indie/
-```
-
-## 📌 Status do projeto
-
-✅ Projeto acadêmico finalizado
-
-Possíveis melhorias futuras:
-
-* Tornar o layout responsivo para diferentes tamanhos de tela
-* Melhorar a acessibilidade
-* Padronizar os nomes dos arquivos
-* Adicionar novas páginas de jogos
-* Publicar o projeto no GitHub Pages
-
-## 👩‍💻 Autora
+👩‍💻 Autora
 
 Desenvolvido por **Gi Muniz**.
 
